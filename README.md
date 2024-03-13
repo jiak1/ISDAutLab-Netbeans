@@ -1,6 +1,6 @@
 # Introduction to Software Development
 
-This repo contains the code for the labs in Jacks classes each week.
+This repo contains the code for the labs in Jacks classes each week. This repo is for Netbeans users, if you wish to use VSCode, please visit this repo: https://github.com/jiak1/ISDAutLab-VsCode
 
 Make sure you first install:
 
