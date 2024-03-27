@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.Random"%>
+<%@page import="uts.isd.model.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,10 +14,16 @@
             String name = request.getParameter("name");
             String email = request.getParameter("email");
             String gender = request.getParameter("gender");
+            String phone = request.getParameter("phone");
             String password = request.getParameter("password");
             String favCol = request.getParameter("favcol");
             
             String tos = request.getParameter("tos");
+            
+            if(submitted != null){
+                User user = new User(email, name, phone, password, gender, favCol);
+                session.setAttribute("user", user);
+        }
     %>
     <body >
         <% if(submitted == null) {%>
