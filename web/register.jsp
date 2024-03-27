@@ -25,7 +25,13 @@
                 session.setAttribute("user", user);
         }
     %>
-    <body >
+    
+    <% if (favCol != null) { %>
+        <body bgcolor="<%=favCol%>">
+    <% } else { %>
+        <body >
+    <% } %>
+    
         <% if(submitted == null) {%>
         <form>
             <label for="email">Email:</label>
